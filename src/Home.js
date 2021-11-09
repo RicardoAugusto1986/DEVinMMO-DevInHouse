@@ -6,17 +6,21 @@ import PageDescrition from './pageDescrition'
 
 function Home() {
   return (
+
+    
     
     <main>
+      <header>
+        <h1>Bem vindo ao site DEVinMMO</h1>
+        <h2>Aqui você encontrar as novidades do mundo dos games</h2>
+      </header>
+
       <Switch>
         <Route path='/pageList' component={Pagelist}/>
         <Route path='/pageDescrition' component={PageDescrition}/>
         <Route path='/pageNotice' component={PageNotice}/>
       </Switch>
 
-      <div>
-        <h1>Aqui é a Home</h1>
-      </div>
     </main>
     
   );
